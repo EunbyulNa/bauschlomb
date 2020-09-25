@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+  vertical-align:
+}
+
+body {
+font-size: 12px;
+color:#888;
+}
+
+.wrap {
+  width: 961px;
+  margin: auto;
+}
+/****** header *****/
+header{
+  height: 135px;
+background: url('img/bg_wrap.gif') repeat-x;
+}
+
+#header_in {
+  position: relative;
+background: url('img/bg_header.gif') repeat-x;
+}
+
+#header_in h1 {
+padding-top: 23px;
+margin-bottom: 18px;
+}
+
+#header_in .menu {
+  position: absolute;
+  top:40px;
+  right:0;
+}
+
+.gnb {
+  position: absolute;
+  top:auto;
+}
+
+.gnb>li, .menu li {
+  float: left;
+}
+
+.quick {
+  position: absolute;
+  left: 790px;
+  top: 100px;
+}
+
+.menu li {
+  padding: 0 5px;
+  background: url('img/h_menu_bar.gif') no-repeat 3px;
+}
+
+/* 롤오버*/
+.gnb>li {
+  cursor: pointer;
+}
+
+
+.gnb>li .btn_on {
+  display: none;
+}
+
+.gnb>li:hover .btn_off{
+  display: none;
+}
+
+.gnb>li:hover .btn_on {
+  display: block;
+}
+
+
+/*서브*/
+
+.depth2 {
+  display: none;
+  position: absolute;
+  width: 200px;
+  background-color: white;
+  border-bottom: 2px solid #64c29d;
+  padding: 10px 0;
+  margin-top: 1px;
+}
+
+
+.depth2 a {
+display: block;
+padding: 10px;
+border-top: 1px solid #ddd;
+font-size: 13px;
+font-weight: bold;
+color:gray;
+transition: 0.3s;
+
+}
+
+.depth2 a:hover {
+  color: #000;
+  background-color: #dfdfdf;
+}
+
+.gnb>li:hover .depth2 {
+  display: block;
+}
+
+
+/****** slider *****/
+#slider {
+  height: 457px;
+background: url('img/main_banner_02_bg.png') 50% 0 no-repeat #51A1D7;
+text-align: center;
+border: 15px solid #eff5f5;
+border-left: none;
+border-right: none;
+
+}
+/****** content *****/
+#content {
+  padding: 35px 0;
+}
+
+.tvcf {
+  border-right: 1px solid #cecece;
+  width: 305px;
+  height: 170px;
+  float:left;
+  padding-right:10px;
+  margin-bottom: 30px;
+}
+
+
+.tvcf .tab li {
+  float: left;
+  padding-right: 5px;
+  background: url('img/h2_bar.gif') no-repeat 100%;
+  margin-left: 20px;
+
+}
+
+.tvcf .tab li:last-child {
+  background: none;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+
+
+
+.board {
+  position: relative;
+  border-right: 1px solid #cecece;
+  width: 305px;
+  height: 170px;
+  float:left;
+  padding: 0 10px;
+}
+
+
+.board .tab {
+  overflow: hidden;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.board .tab li{
+  float: left;
+  margin-right: 15px;
+}
+
+.notice {
+  padding: 20px 0 0 20px;
+}
+
+
+
+.board .board_list li {
+  background: url("img/li_point.gif") no-repeat 0 7px;
+  padding-left: 6px;
+  line-height: 18px;
+  width: 260px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.board_list a {
+  color:#888;
+}
+
+.board_list a:hover {
+  color: #07b8e4;
+  text-decoration:underline;
+}
+
+
+.board .more {
+  position: absolute;
+  bottom: 0;
+  left: 250px;
+}
+
+.event {
+  height: 170px;
+  float:left;
+ padding-left: 10px;
+
+}
+
+.event h2 {
+padding-left: 20px;
+margin-bottom: 10px;
+}
+
+.event div {
+  margin-top: 15px;
+}
+
+.banner_wrap {
+  clear:both;
+
+}
+
+.banner_wrap ul {
+  overflow: hidden;
+  padding-top: 20px;
+  border-top: 1px solid #cecece;
+
+}
+
+.banner_wrap li {
+  float:left;
+  margin-right: 12px;
+}
+
+.banner_wrap li:last-child {
+  margin-right: 0;
+}
+
+.contact {
+  border-top: 1px solid #dbdddd;
+  background-color: #f3f4f4;
+  padding:13px;
+  margin: 30px 0;
+
+}
+/****** footer *****/
+footer {
+height: 220px;
+background: url('img/bg_footer.gif');
+}
+
+#footer_in {
+  position: relative;
+
+}
+
+.icons {
+  position: absolute;
+  right:0;
+  top: 10px;
+}
+
+.icons a {
+  margin-right: 10px;
+}
+
+.icons a:last-child {
+  margin-right: 0;
+}
+
+.copyright {
+  margin-top: 20px;
+}
+
+.logo {
+  margin-top: 20px;
+}
+
+.f_menu {
+position: absolute;
+top: 70px;
+right: 0;
+}
+
+.f_menu ul {
+overflow: hidden;
+}
+
+.f_menu li {
+float: left;
+background: url('img/f_menu_bar.gif') no-repeat right 2px;
+margin-right: 6px;
+padding-right: 7px;
+}
+
+.f_menu li:last-child {
+  background: none;
+}
+
+.f_menu a {
+color: #fff;
+}
+
+
+.f_menu a:hover {
+  text-decoration: underline;
+}
+
+.familysite {
+position: absolute;
+top: 100px;
+right:0;
+}
+
+.fam_over {
+  position: absolute;
+  bottom: 26px;
+  right:0;
+  display: none;
+}
+
+.familysite:hover .fam_over {
+  display: block;
+}
